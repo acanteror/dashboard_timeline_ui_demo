@@ -6,11 +6,11 @@ class BasePage extends StatelessWidget {
     Key key,
     this.title,
     this.childTop,
-    this.child2,
+    this.childBody,
   }) : super(key: key);
   final String title;
   final Widget childTop;
-  final Widget child2;
+  final Widget childBody;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,6 @@ class BasePage extends StatelessWidget {
         child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            automaticallyImplyLeading: false,
             backgroundColor: Colors.transparent,
             elevation: 0,
             iconTheme: IconThemeData(color: Colors.white),
@@ -66,7 +65,7 @@ class BasePage extends StatelessWidget {
                           topLeft: Radius.circular(40),
                           topRight: Radius.circular(40),
                         )),
-                    child: child2,
+                    child: childBody,
                   ),
                 )
               ],
