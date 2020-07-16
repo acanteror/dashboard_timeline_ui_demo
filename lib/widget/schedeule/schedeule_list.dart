@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dashboard_timeline_ui_demo/model/task_model.dart';
-import 'package:dashboard_timeline_ui_demo/widget/schedeule/timeline_card.dart';
+import 'package:dashboard_timeline_ui_demo/widget/schedeule/timeline_item.dart';
 
 class SchedeuleList extends StatelessWidget {
   const SchedeuleList({
@@ -16,7 +16,7 @@ class SchedeuleList extends StatelessWidget {
       itemCount: tasks.length,
       itemBuilder: (context, index) {
         final _task = tasks[index];
-        return TimelineCard(task: _task);
+        return TimelineItem(task: _task);
       },
     );
   }
