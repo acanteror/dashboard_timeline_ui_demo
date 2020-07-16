@@ -54,7 +54,7 @@ List<Day> data = <Day>[
       notificable: true,
     )
   ]),
-  Day(monthNumber: 3, weekDay: 'WED', tasks: [
+  Day(monthNumber: 3, weekDay: 'WED', currentDay: true, tasks: [
     Task(
       title: 'Morning run in the park',
       description: 'Mon - Fri',
