@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:dashboard_timeline_ui_demo/data/fake.dart';
 import 'package:dashboard_timeline_ui_demo/widget/day_card.dart';
-import 'package:dashboard_timeline_ui_demo/pages/base_page.dart';
+import 'package:dashboard_timeline_ui_demo/page/base_page.dart';
 import 'package:dashboard_timeline_ui_demo/extension/context_extension.dart';
 
 class ListPage extends StatelessWidget {

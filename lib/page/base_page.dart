@@ -62,8 +62,9 @@ class BasePage extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: Colors.white,
                         border: Border.all(color: Colors.white),
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(50),
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(45),
+                          topRight: Radius.circular(45),
                         )),
                     child: child2,
                   ),

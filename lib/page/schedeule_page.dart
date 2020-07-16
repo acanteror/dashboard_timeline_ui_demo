@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:dashboard_timeline_ui_demo/pages/base_page.dart';
+import 'package:dashboard_timeline_ui_demo/page/base_page.dart';
 import 'package:dashboard_timeline_ui_demo/extension/context_extension.dart';
 
 class SchedeulePage extends StatelessWidget {
