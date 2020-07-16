@@ -1,4 +1,4 @@
-import 'package:dashboard_timeline_ui_demo/pages/list_page.dart';
+import 'package:dashboard_timeline_ui_demo/page/list_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
