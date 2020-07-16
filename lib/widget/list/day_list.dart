@@ -1,7 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:dashboard_timeline_ui_demo/data/fake.dart';
 import 'package:dashboard_timeline_ui_demo/page/schedeule_page.dart';
 import 'package:dashboard_timeline_ui_demo/widget/shared/day_card.dart';
-import 'package:flutter/material.dart';
 import 'package:dashboard_timeline_ui_demo/extension/context_extension.dart';
 
 class DayList extends StatelessWidget {
