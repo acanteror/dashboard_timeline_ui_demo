@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Dashboard - Timeline Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: ListPage(title: 'My List'),
