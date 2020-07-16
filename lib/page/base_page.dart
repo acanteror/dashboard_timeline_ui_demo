@@ -73,7 +73,7 @@ class BasePage extends StatelessWidget {
             ),
           ),
           floatingActionButton: FloatingActionButton(
-            backgroundColor: Colors.blueGrey[200],
+            backgroundColor: Colors.orange,
             child: Icon(Icons.add, color: Colors.white),
             onPressed: () {},
           ),
