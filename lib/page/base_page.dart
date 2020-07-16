@@ -5,11 +5,11 @@ class BasePage extends StatelessWidget {
   BasePage({
     Key key,
     this.title,
-    this.child1,
+    this.childTop,
     this.child2,
   }) : super(key: key);
   final String title;
-  final Widget child1;
+  final Widget childTop;
   final Widget child2;
 
   @override
@@ -55,7 +55,7 @@ class BasePage extends StatelessWidget {
               children: <Widget>[
                 Container(
                   height: context.pch(12),
-                  child: child1,
+                  child: childTop,
                 ),
                 Expanded(
                   child: Container(
