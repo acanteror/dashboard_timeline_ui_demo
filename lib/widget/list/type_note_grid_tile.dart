@@ -18,7 +18,7 @@ class TypeNoteGridTile extends StatelessWidget {
           color: Colors.orange[100],
           border: Border.all(color: Colors.orange[100]),
           borderRadius: BorderRadius.all(
-            Radius.circular(15),
+            Radius.circular(20),
           )),
       padding: EdgeInsets.all(20),
       margin: EdgeInsets.all(5),
