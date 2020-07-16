@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: ListPage(title: 'My List'),
+      home: ListPage(),
     );
   }
 }
