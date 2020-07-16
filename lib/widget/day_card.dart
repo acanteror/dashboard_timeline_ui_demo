@@ -1,4 +1,3 @@
-import 'package:dashboard_timeline_ui_demo/data/fake.dart';
 import 'package:flutter/material.dart';
 import 'package:dashboard_timeline_ui_demo/model/day_model.dart';
 import 'package:dashboard_timeline_ui_demo/extension/context_extension.dart';
