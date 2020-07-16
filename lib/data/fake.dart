@@ -1,5 +1,7 @@
 import 'package:dashboard_timeline_ui_demo/model/day_model.dart';
 import 'package:dashboard_timeline_ui_demo/model/task_model.dart';
+import 'package:dashboard_timeline_ui_demo/model/type_note_model.dart';
+import 'package:flutter/material.dart';
 
 List<Day> data = <Day>[
   Day(monthNumber: 1, weekDay: 'MON', tasks: [
@@ -186,4 +188,13 @@ List<Day> data = <Day>[
       notificable: true,
     )
   ]),
+];
+
+List<TypeNote> typeNotes = <TypeNote>[
+  TypeNote(title: 'All Tasks', items: 20, iconData: Icons.note),
+  TypeNote(title: 'Personal', items: 100, iconData: Icons.person),
+  TypeNote(title: 'Work', items: 100, iconData: Icons.work),
+  TypeNote(title: 'Ideas', items: 1000, iconData: Icons.lightbulb_outline),
+  TypeNote(title: 'Art Work', items: 42, iconData: Icons.art_track),
+  TypeNote(title: 'Urgent', items: 2, iconData: Icons.warning),
 ];
