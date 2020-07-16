@@ -15,7 +15,7 @@ class TimelineCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return TimelineTile(
       alignment: TimelineAlign.manual,
-      hasIndicator: true,
+      hasIndicator: task.currentTime,
       lineX: 0.2,
       rightChild: Container(
         constraints: BoxConstraints(
@@ -34,18 +34,36 @@ class TimelineCard extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              Text('TOP'),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    task.title,
+                  ),
+                  task.done
+                      ? Icon(Icons.check)
+                      : task.notificable
+                          ? Icon(Icons.notifications_active)
+                          : Icon(Icons.notifications_none)
+                ],
+              ),
               Divider(
                 height: 10,
                 thickness: 2,
               ),
-              Text('BOTTOM')
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(task.description),
+                  Icon(Icons.more_horiz)
+                ],
+              ),
             ],
           ),
         ),
       ),
       leftChild: Center(
-        child: Text('8:00'),
+        child: Text(task.time),
       ),
     );
   }
