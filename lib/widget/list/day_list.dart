@@ -1,5 +1,6 @@
 import 'package:dashboard_timeline_ui_demo/data/fake.dart';
-import 'package:dashboard_timeline_ui_demo/widget/day_card.dart';
+import 'package:dashboard_timeline_ui_demo/page/schedeule_page.dart';
+import 'package:dashboard_timeline_ui_demo/widget/shared/day_card.dart';
 import 'package:flutter/material.dart';
 import 'package:dashboard_timeline_ui_demo/extension/context_extension.dart';
 
@@ -17,7 +18,14 @@ class DayList extends StatelessWidget {
         itemCount: data.length,
         itemBuilder: (context, index) {
           final day = data[index];
-          return DayCard(day: day);
+          return DayCard(
+              day: day,
+              onPress: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => SchedeulePage(day: day)));
+              });
         },
       ),
     );
