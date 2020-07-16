@@ -12,7 +12,6 @@ class DayCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(day.currentDay);
     final fontColor = day.currentDay ? Colors.white : Colors.black;
     final backColor = day.currentDay ? Colors.orange : Colors.white;
     return Container(
