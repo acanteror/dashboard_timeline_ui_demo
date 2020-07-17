@@ -23,9 +23,10 @@ class BasePage extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            end: Alignment.topRight,
             colors: [
               Colors.blueGrey,
+              Colors.blueAccent,
               Colors.blue[300],
             ],
           ),
@@ -55,8 +56,7 @@ class BasePage extends StatelessWidget {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.white,
-                        border: Border.all(color: Colors.white),
+                        color: Colors.white.withOpacity(.6),
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(40),
                           topRight: Radius.circular(40),

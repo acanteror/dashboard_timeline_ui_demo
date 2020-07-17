@@ -13,10 +13,15 @@ class TimelineItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final _lineStyle = LineStyle(color: Colors.black26, width: 2);
+    final _indicatorStyle = IndicatorStyle(width: 12, color: Colors.orange);
     return TimelineTile(
       alignment: TimelineAlign.manual,
       hasIndicator: task.currentTime,
       lineX: 0.2,
+      topLineStyle: _lineStyle,
+      bottomLineStyle: _lineStyle,
+      indicatorStyle: _indicatorStyle,
       rightChild: TaskCard(task: task),
       leftChild: Center(
         child: Text(task.time),
