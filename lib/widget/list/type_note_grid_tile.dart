@@ -13,13 +13,13 @@ class TypeNoteGridTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: context.pcw(3),
       decoration: BoxDecoration(
-          color: Colors.orange[100],
-          border: Border.all(color: Colors.orange[100]),
-          borderRadius: BorderRadius.all(
-            Radius.circular(20),
-          )),
+        color: Colors.orange[100],
+        border: Border.all(color: Colors.orange[100]),
+        borderRadius: BorderRadius.all(
+          Radius.circular(20),
+        ),
+      ),
       padding: EdgeInsets.all(20),
       margin: EdgeInsets.all(5),
       child: Column(
@@ -27,20 +27,24 @@ class TypeNoteGridTile extends StatelessWidget {
         children: <Widget>[
           Icon(
             typeNote.iconData,
-            size: 40.0,
+            size: context.pcw(10),
             color: Colors.orange[400],
           ),
           Text(
             '${typeNote.title}',
-            style: TextStyle(
-                color: Colors.orange,
-                fontSize: context.pcw(7),
-                fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.orange,
+              fontSize: context.pcw(6),
+            ),
           ),
           Text(
             '${typeNote.items} items',
             textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: context.pcw(3.5),
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ],
       ),

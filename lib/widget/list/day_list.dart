@@ -17,15 +17,18 @@ class DayList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: data.length,
         itemBuilder: (context, index) {
-          final day = data[index];
+          final _day = data[index];
           return DayCard(
-              day: day,
-              onPress: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => SchedeulePage(day: day)));
-              });
+            day: _day,
+            onPress: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SchedeulePage(day: _day),
+                ),
+              );
+            },
+          );
         },
       ),
     );

@@ -16,14 +16,14 @@ class DayCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final fontColor = day.currentDay ? Colors.white : Colors.black;
-    final backColor = day.currentDay ? Colors.orange : Colors.white;
+    final _fontColor = day.currentDay ? Colors.white : Colors.black;
+    final _backColor = day.currentDay ? Colors.orange : Colors.white;
     return GestureDetector(
       onTap: onPress,
       child: Container(
         decoration: BoxDecoration(
-            color: backColor,
-            border: Border.all(color: backColor),
+            color: _backColor,
+            border: Border.all(color: _backColor),
             borderRadius: BorderRadius.all(
               Radius.circular(5),
             )),
@@ -36,14 +36,14 @@ class DayCard extends StatelessWidget {
             Text(
               day.monthNumber.toString(),
               style: TextStyle(
-                  color: fontColor,
+                  color: _fontColor,
                   fontWeight: FontWeight.bold,
                   fontSize: context.pcw(6)),
             ),
             Text(
               day.weekDay.toUpperCase(),
               style: TextStyle(
-                  color: fontColor,
+                  color: _fontColor,
                   fontWeight: FontWeight.bold,
                   fontSize: context.pcw(2.8)),
             ),

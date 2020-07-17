@@ -5,12 +5,14 @@ class BasePage extends StatelessWidget {
   BasePage({
     Key key,
     this.title,
+    this.actions,
     this.childTop,
     this.childBody,
   }) : super(key: key);
   final String title;
   final Widget childTop;
   final Widget childBody;
+  final List<Widget> actions;
 
   @override
   Widget build(BuildContext context) {
@@ -31,24 +33,18 @@ class BasePage extends StatelessWidget {
         child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            iconTheme: IconThemeData(color: Colors.white),
-            title: Text(
-              title.toUpperCase(),
-              style: Theme.of(context).textTheme.headline5.copyWith(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w800,
-                  ),
-            ),
-            actionsIconTheme: IconThemeData(color: Colors.white),
-            actions: <Widget>[
-              IconButton(
-                icon: Icon(Icons.replay),
-                onPressed: () {},
-              )
-            ],
-          ),
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+              iconTheme: IconThemeData(color: Colors.white),
+              title: Text(
+                title.toUpperCase(),
+                style: Theme.of(context).textTheme.headline5.copyWith(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w800,
+                    ),
+              ),
+              actionsIconTheme: IconThemeData(color: Colors.white),
+              actions: actions),
           body: Container(
             child: Column(
               children: <Widget>[

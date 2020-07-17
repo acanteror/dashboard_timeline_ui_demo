@@ -12,10 +12,18 @@ class SchedeulePage extends StatelessWidget {
 
   final Day day;
 
+  final List<Widget> _actions = <Widget>[
+    IconButton(
+      icon: Icon(Icons.calendar_today),
+      onPressed: () {},
+    )
+  ];
+
   @override
   Widget build(BuildContext context) {
     return BasePage(
       title: 'Schedeule',
+      actions: _actions,
       childTop: SchedeuleHeader(day: day),
       childBody: SchedeuleList(tasks: day.tasks),
     );

@@ -18,8 +18,8 @@ class TypeNoteGrid extends StatelessWidget {
         gridDelegate:
             SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         itemBuilder: (BuildContext context, int index) {
-          final typeNote = typeNotes[index];
-          return TypeNoteGridTile(typeNote: typeNote);
+          final _typeNote = typeNotes[index];
+          return TypeNoteGridTile(typeNote: _typeNote);
         },
       ),
     );

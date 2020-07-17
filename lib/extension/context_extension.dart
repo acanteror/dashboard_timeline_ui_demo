@@ -5,12 +5,12 @@ extension ContextExtension on BuildContext {
     return MediaQuery.of(this).size;
   }
 
-  ///percent of width
+  ///percent of size width
   double pcw(double perCent) {
     return size().width * perCent / 100;
   }
 
-  ///percent of height
+  ///percent of size height
   double pch(double perCent) {
     return size().height * perCent / 100;
   }
