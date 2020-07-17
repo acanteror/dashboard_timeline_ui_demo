@@ -13,9 +13,9 @@ final LinearGradient backgroudGradient = LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.topRight,
   colors: [
-    Colors.blueGrey,
-    Colors.blueAccent,
-    Colors.blue[300],
+    Colors.blueGrey[300],
+    Colors.blueAccent[200],
+    Colors.blue[400],
   ],
 );
 

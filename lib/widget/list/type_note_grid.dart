@@ -11,9 +11,10 @@ class TypeNoteGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(
-        vertical: context.pch(5),
-        horizontal: context.pcw(5),
+      margin: EdgeInsets.only(
+        top: context.pch(5),
+        left: context.pcw(5),
+        right: context.pcw(5),
       ),
       child: GridView.builder(
         itemCount: typeNotes.length,

@@ -12,7 +12,7 @@ List<Day> data = <Day>[
         notificable: false,
         time: '8:00'),
     Task(
-        title: 'Skype meeting with contractor',
+        title: 'Skype meeting',
         description: 'Delivery overview',
         done: false,
         notificable: true,
@@ -39,7 +39,7 @@ List<Day> data = <Day>[
       time: '8:00',
     ),
     Task(
-      title: 'Skype meeting with contractor',
+      title: 'Skype meeting',
       description: 'Delivery overview',
       done: false,
       notificable: true,
@@ -66,7 +66,7 @@ List<Day> data = <Day>[
         notificable: false,
         time: '8:00'),
     Task(
-        title: 'Skype meeting with contractor',
+        title: 'Skype meeting',
         description: 'Delivery overview',
         done: false,
         notificable: true,
@@ -93,7 +93,7 @@ List<Day> data = <Day>[
         notificable: false,
         time: '8:00'),
     Task(
-        title: 'Skype meeting with contractor',
+        title: 'Skype meeting',
         description: 'Delivery overview',
         done: false,
         notificable: false,
@@ -119,7 +119,7 @@ List<Day> data = <Day>[
         notificable: false,
         time: '8:00'),
     Task(
-        title: 'Skype meeting with contractor',
+        title: 'Skype meeting',
         description: 'Delivery overview',
         done: false,
         notificable: true,
@@ -147,7 +147,7 @@ List<Day> data = <Day>[
         notificable: false,
         time: '8:00'),
     Task(
-        title: 'Skype meeting with contractor',
+        title: 'Skype meeting',
         description: 'Delivery overview',
         done: false,
         notificable: true,
@@ -173,7 +173,7 @@ List<Day> data = <Day>[
         notificable: false,
         time: '8:00'),
     Task(
-        title: 'Skype meeting with contractor',
+        title: 'Skype meeting',
         description: 'Delivery overview',
         done: false,
         notificable: false,
