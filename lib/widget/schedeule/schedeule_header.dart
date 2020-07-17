@@ -1,3 +1,4 @@
+import 'package:dashboard_timeline_ui_demo/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:dashboard_timeline_ui_demo/widget/shared/day_card.dart';
 import 'package:dashboard_timeline_ui_demo/model/day_model.dart';
@@ -23,7 +24,7 @@ class SchedeuleHeader extends StatelessWidget {
             Text(
               'TODAY LIST',
               style: TextStyle(
-                color: Colors.white,
+                color: white,
                 fontSize: context.pcw(4),
                 fontWeight: FontWeight.bold,
               ),
@@ -31,7 +32,7 @@ class SchedeuleHeader extends StatelessWidget {
             Text(
               '${day.tasks.length} TASKS',
               style: TextStyle(
-                color: Colors.white,
+                color: white,
                 fontSize: context.pcw(3),
                 fontWeight: FontWeight.bold,
               ),

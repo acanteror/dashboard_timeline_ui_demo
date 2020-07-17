@@ -1,3 +1,4 @@
+import 'package:dashboard_timeline_ui_demo/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:dashboard_timeline_ui_demo/model/type_note_model.dart';
 import 'package:dashboard_timeline_ui_demo/extension/context_extension.dart';
@@ -14,8 +15,7 @@ class TypeNoteGridTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.orange[100],
-        border: Border.all(color: Colors.orange[100]),
+        color: accentLight,
         borderRadius: BorderRadius.all(
           Radius.circular(20),
         ),
@@ -28,13 +28,13 @@ class TypeNoteGridTile extends StatelessWidget {
           Icon(
             typeNote.iconData,
             size: context.pcw(10),
-            color: Colors.orange[400],
+            color: accent,
           ),
           Text(
             '${typeNote.title}',
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: Colors.orange,
+              color: accent,
               fontSize: context.pcw(6),
             ),
           ),

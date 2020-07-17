@@ -12,11 +12,14 @@ class TypeNoteGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(
-          vertical: context.pch(5), horizontal: context.pcw(5)),
+        vertical: context.pch(5),
+        horizontal: context.pcw(5),
+      ),
       child: GridView.builder(
         itemCount: typeNotes.length,
-        gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+        ),
         itemBuilder: (BuildContext context, int index) {
           final _typeNote = typeNotes[index];
           return TypeNoteGridTile(typeNote: _typeNote);

@@ -1,3 +1,4 @@
+import 'package:dashboard_timeline_ui_demo/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:dashboard_timeline_ui_demo/model/day_model.dart';
 import 'package:dashboard_timeline_ui_demo/extension/context_extension.dart';
@@ -16,8 +17,8 @@ class DayCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _fontColor = day.currentDay ? Colors.white : Colors.black;
-    final _backColor = day.currentDay ? Colors.orange : Colors.white;
+    final _fontColor = day.currentDay ? white : black;
+    final _backColor = day.currentDay ? accent : white;
     return GestureDetector(
       onTap: onPress,
       child: Container(

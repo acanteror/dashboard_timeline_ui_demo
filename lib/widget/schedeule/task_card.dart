@@ -1,3 +1,4 @@
+import 'package:dashboard_timeline_ui_demo/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:dashboard_timeline_ui_demo/model/task_model.dart';
 import 'package:dashboard_timeline_ui_demo/extension/context_extension.dart';
@@ -23,8 +24,7 @@ class TaskCard extends StatelessWidget {
       ),
       width: context.pcw(3),
       decoration: BoxDecoration(
-          color: Colors.orange[100],
-          border: Border.all(color: Colors.orange[100]),
+          color: accentLight,
           borderRadius: BorderRadius.all(
             Radius.circular(20),
           )),

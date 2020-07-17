@@ -1,3 +1,4 @@
+import 'package:dashboard_timeline_ui_demo/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:dashboard_timeline_ui_demo/extension/context_extension.dart';
 
@@ -20,31 +21,21 @@ class BasePage extends StatelessWidget {
       bottom: false,
       top: false,
       child: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.topRight,
-            colors: [
-              Colors.blueGrey,
-              Colors.blueAccent,
-              Colors.blue[300],
-            ],
-          ),
-        ),
+        decoration: BoxDecoration(gradient: backgroudGradient),
         child: Scaffold(
-          backgroundColor: Colors.transparent,
+          backgroundColor: transparent,
           appBar: AppBar(
-              backgroundColor: Colors.transparent,
+              backgroundColor: transparent,
               elevation: 0,
-              iconTheme: IconThemeData(color: Colors.white),
+              iconTheme: IconThemeData(color: white),
               title: Text(
                 title.toUpperCase(),
                 style: Theme.of(context).textTheme.headline5.copyWith(
-                      color: Colors.white,
+                      color: white,
                       fontWeight: FontWeight.w800,
                     ),
               ),
-              actionsIconTheme: IconThemeData(color: Colors.white),
+              actionsIconTheme: IconThemeData(color: white),
               actions: actions),
           body: Container(
             child: Column(
@@ -56,7 +47,7 @@ class BasePage extends StatelessWidget {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(.6),
+                        color: opacityWidth,
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(40),
                           topRight: Radius.circular(40),
@@ -68,8 +59,8 @@ class BasePage extends StatelessWidget {
             ),
           ),
           floatingActionButton: FloatingActionButton(
-            backgroundColor: Colors.orange,
-            child: Icon(Icons.add, color: Colors.white),
+            backgroundColor: accent,
+            child: Icon(Icons.add, color: white),
             onPressed: () {},
           ),
         ),
